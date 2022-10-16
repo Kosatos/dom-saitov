@@ -1,0 +1,41 @@
+@import "fonts";
+
+$fontFamily: "Rubik", sans-serif;
+$mainColor: #fff;
+$secondaryColor: #fcb500;
+$blackColor: #111111;
+
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1342;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+@import "null";
+
+body {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  color: $mainColor;
+  background-color: $blackColor;
+}
+
+.container {
+  max-width: $maxWidthContainer + px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: #{$md1+px}) {
+    max-width: 970px;
+  }
+  @media (max-width: #{$md2+px}) {
+    max-width: 750px;
+  }
+  @media (max-width: #{$md3+px}) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
