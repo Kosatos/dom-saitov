@@ -21,7 +21,7 @@
             <a href="tel:+74872792910" class="top-header__tel"
               >+7 (4872) 79-29-10</a
             >
-            <button class="top-header__btn btn">
+            <button class="top-header__btn small-btn">
               <svg
                 width="36"
                 height="36"
@@ -43,28 +43,15 @@
       </div>
       <nav class="header__nav nav-header">
         <div class="nav-header__container container">
-          <div class="nav-header__dropdown-menu dropdown-menu">
-            <a href="#" class="dropdown-menu__caller">Увеличение продаж</a>
-            <!-- <ul class="dropdown-menu__list">
-              <li class="dropdown-menu__item">
-                <a href="#" class="dropdown-menu__link">Пункт 1</a>
-              </li>
-              <li class="dropdown-menu__item">
-                <a href="#" class="dropdown-menu__link"
-                  >SEO продвижение сайтов в Яндекс</a
-                >
-              </li>
-              <li class="dropdown-menu__item">
-                <a href="#" class="dropdown-menu__link"
-                  >Проведение бизнеса в социальных сетях</a
-                >
-              </li>
-              <li class="dropdown-menu__item">
-                <a href="#" class="dropdown-menu__link">Geyrn 4</a>
-              </li>
-            </ul> -->
-          </div>
           <ul class="nav-header__list">
+            <li class="nav-header__item">
+              <a
+                href="#"
+                class="nav-header__link dropdown-caller"
+                id="header-dropdown-caller"
+                >Увеличение продаж</a
+              >
+            </li>
             <li class="nav-header__item">
               <a href="#" class="nav-header__link">Создание сайтов</a>
             </li>
@@ -87,7 +74,7 @@
               <a href="#" class="nav-header__link">Контакты</a>
             </li>
           </ul>
-          <div class="nav-header__search">
+          <div class="nav-header__search-caller" id="header-search-caller">
             <svg
               width="36"
               height="36"
@@ -111,8 +98,59 @@
               />
             </svg>
           </div>
+
+          <ul
+            class="nav-header__dropdown-menu dropdown-menu"
+            id="header-dropdown"
+          >
+            <li class="dropdown-menu__item">
+              <a href="#" class="dropdown-menu__link">Пункт 1</a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a href="#" class="dropdown-menu__link"
+                >SEO продвижение сайтов в Яндекс</a
+              >
+            </li>
+            <li class="dropdown-menu__item">
+              <a href="#" class="dropdown-menu__link"
+                >Проведение бизнеса в социальных сетях</a
+              >
+            </li>
+            <li class="dropdown-menu__item">
+              <a href="#" class="dropdown-menu__link">Geyrn 4</a>
+            </li>
+          </ul>
+
+          <form class="nav-header__search search" id="header-search">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Поиск по сайту"
+            />
+          </form>
         </div>
       </nav>
     </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title">Комплексный интернет-маркетинг</h1>
+            <p class="hero__text">
+              Мы помогаем бизнесу находить клиентов быстрее, интегрируя
+              маркетинговые, обучающие и технологические продукты
+            </p>
+            <div class="hero__buttons">
+              <button class="hero__btn large-btn">
+                Заказать увеличение продаж
+              </button>
+              <button class="hero__btn large-btn large-btn_alternative">
+                Заказать экспертный аудит
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
