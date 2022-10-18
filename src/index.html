@@ -8,6 +8,8 @@
     <title>Дом сайтов</title>
   </head>
   <body>
+    <!-- header  -->
+
     <header class="header">
       <div class="header__top top-header">
         <div class="top-header__container container">
@@ -43,7 +45,15 @@
       </div>
       <nav class="header__nav nav-header">
         <div class="nav-header__container container">
-          <ul class="nav-header__list">
+          <div class="header__burger burger-header" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="nav-header__text">
+            Увеличиваем продажи в Вашем бизнесе!
+          </span>
+          <ul class="nav-header__list" id="nav-menu">
             <li class="nav-header__item">
               <a
                 href="#"
@@ -52,6 +62,29 @@
                 >Увеличение продаж</a
               >
             </li>
+
+            <ul
+              class="nav-header__dropdown-menu dropdown-menu_mini"
+              id="header-dropdown-mini"
+            >
+              <li class="dropdown-menu__item dropdown-menu__item_hit">
+                <a href="#" class="dropdown-menu__link">Пункт 1</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="#" class="dropdown-menu__link"
+                  >SEO продвижение сайтов в Яндекс</a
+                >
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="#" class="dropdown-menu__link"
+                  >Проведение бизнеса в социальных сетях</a
+                >
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="#" class="dropdown-menu__link">Пункт 4</a>
+              </li>
+            </ul>
+
             <li class="nav-header__item">
               <a href="#" class="nav-header__link">Создание сайтов</a>
             </li>
@@ -103,7 +136,7 @@
             class="nav-header__dropdown-menu dropdown-menu"
             id="header-dropdown"
           >
-            <li class="dropdown-menu__item">
+            <li class="dropdown-menu__item dropdown-menu__item_hit">
               <a href="#" class="dropdown-menu__link">Пункт 1</a>
             </li>
             <li class="dropdown-menu__item">
@@ -117,7 +150,7 @@
               >
             </li>
             <li class="dropdown-menu__item">
-              <a href="#" class="dropdown-menu__link">Geyrn 4</a>
+              <a href="#" class="dropdown-menu__link">Пункт 4</a>
             </li>
           </ul>
 
@@ -132,25 +165,354 @@
       </nav>
     </header>
     <main class="main">
-      <section class="hero">
-        <div class="hero__container container">
-          <div class="hero__content">
-            <h1 class="hero__title">Комплексный интернет-маркетинг</h1>
-            <p class="hero__text">
+      <!-- section intro  -->
+
+      <section class="intro">
+        <div class="intro__background-wrapper"></div>
+        <div class="intro__container container">
+          <div class="intro__content">
+            <h1 class="intro__title">Комплексный интернет-маркетинг</h1>
+            <p class="intro__text">
               Мы помогаем бизнесу находить клиентов быстрее, интегрируя
               маркетинговые, обучающие и технологические продукты
             </p>
-            <div class="hero__buttons">
-              <button class="hero__btn large-btn">
+            <div class="intro__buttons">
+              <button class="intro__btn large-btn">
                 Заказать увеличение продаж
               </button>
-              <button class="hero__btn large-btn large-btn_alternative">
+              <button class="intro__btn large-btn large-btn_alternative">
                 Заказать экспертный аудит
               </button>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- section packages  -->
+
+      <section class="packages">
+        <div class="packages__container container">
+          <h2 class="packages__title section-title">
+            <b>Антикризисные</b> DIGITAL-пакеты
+          </h2>
+          <div class="packages__cards">
+            <div class="packages__card card-packages">
+              <div class="card-packages__background">
+                <img src="./img/card1.png" alt="card/'s background" />
+              </div>
+              <div class="card-packages__content">
+                <h3 class="card-packages__title">
+                  СТАБИЛЬНАЯ ЛИДОГЕНЕРАЦИЯ В КРИЗИС
+                </h3>
+                <div class="card-packages__service">
+                  SEO-продвижение +<br />
+                  Контекстная реклама
+                </div>
+                <p class="card-packages__description">
+                  Ищете сплит каналов для стабильного лидгена? Нет ничего
+                  надежнее классики!
+                </p>
+                <div class="card-packages__offer"></div>
+                Специальная скидка до&nbsp;<b>40%</b> на&nbsp;каждую услугу
+                в&nbsp;пакете
+              </div>
+              <button class="card-packages__btn small-btn">
+                Приобрести пакет
+              </button>
+            </div>
+            <div class="packages__card card-packages">
+              <div class="card-packages__background">
+                <img src="./img/card2.png" alt="card/'s background" />
+              </div>
+              <div class="card-packages__content">
+                <h3 class="card-packages__title">
+                  УСИЛЕНИЕ ЛИДОГЕНЕРАЦИИ В КРИЗИС
+                </h3>
+                <div class="card-packages__service">
+                  SEO-продвижение +<br />
+                  Управление репутацией
+                </div>
+                <p class="card-packages__description">
+                  Добавьте к&nbsp;классическому продвижению работу
+                  с&nbsp;профильными площадками и&nbsp;отзовиками.
+                </p>
+                <div class="card-packages__offer">
+                  Специальная скидка до&nbsp;<b>40%</b> на&nbsp;каждую услугу
+                  в&nbsp;пакете
+                </div>
+              </div>
+              <button class="card-packages__btn small-btn">
+                Приобрести пакет
+              </button>
+            </div>
+            <div class="packages__card card-packages">
+              <div class="card-packages__background">
+                <img src="./img/card3.png" alt="card/'s background" />
+              </div>
+              <div class="card-packages__content">
+                <h3 class="card-packages__title">АНТИБЛОКИРОВКА В СОЦСЕТЯХ</h3>
+                <div class="card-packages__service">
+                  SEO-продвижение +<br />
+                  Таргет + Маркетплейсы
+                </div>
+                <p class="card-packages__description">
+                  Основные каналы лидгена попали под блокировку? У&nbsp;нас уже
+                  есть работающее решение.
+                </p>
+                <div class="card-packages__offer">
+                  Специальная скидка до&nbsp;<b>20%</b> на&nbsp;каждую услугу
+                  в&nbsp;пакете
+                </div>
+              </div>
+              <button class="card-packages__btn small-btn">
+                Приобрести пакет
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section qualities  -->
+
+      <section class="qualities">
+        <div class="qualities__container container">
+          <h2 class="qualities__title section-title">
+            Мы всегда достигаем обещанного результата
+          </h2>
+          <div class="qualities__subtitle">И вот почему:</div>
+          <div class="qualities__slider slider-qualities">
+            <div class="slider-qualities__navigation">
+              <div class="slider-qualities__qualitie">
+                Высокая эффективность работы
+              </div>
+              <div class="slider-qualities__qualitie active">Надежность</div>
+              <div class="slider-qualities__qualitie">Опыт и репутация</div>
+              <div class="slider-qualities__qualitie">Комплексный подход</div>
+              <div class="slider-qualities__qualitie">100% контроль</div>
+              <div class="slider-qualities__qualitie">Выгода</div>
+            </div>
+            <div class="slider-qualities__slides">
+              <p class="slider-qualities__slide">
+                Даём юридические финансовые гарантии выполнения своих
+                обязательств. Более 60 высококвалифицированных специалистов в
+                штате - мы обладаем ресурсами и технологиями для решения любой
+                задачи точно в срок.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section search-clients  -->
+
+      <section class="search-clients">
+        <div class="search-clients__background-wrapper"></div>
+        <div class="search-clients__container container">
+          <h2 class="search-clients__title section-title">
+            Найдем клиентов в Интернете для Вас
+          </h2>
+          <p class="search-clients__info">
+            Для заказа стратегии продвижения в&nbsp;Москве или другом городе
+            просто заполни заявку или закажи обратный звонок. Менеджер
+            по&nbsp;работе с&nbsp;клиентами выйдет на&nbsp;связь
+            и&nbsp;подготовит персональное коммерческое предложение,
+            составленное с&nbsp;учетом желаемых целей и&nbsp;возможностей.
+          </p>
+          <form action="" class="search-clients__form form-search">
+            <input type="text" class="form-search__input" placeholder="Имя" />
+            <input
+              type="email"
+              class="form-search__input"
+              placeholder="E-mail"
+            />
+            <label class="form-search__checkbox-group">
+              <input type="checkbox" class="form-search__checkbox" required />
+              <span class="form-search__checkbox-text"
+                >Вы согласны на обработку персональных данных</span
+              >
+            </label>
+            <button class="form-search__btn large-btn">Отправить заявку</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <!-- footer  -->
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__content">
+          <div class="footer__sidebar">
+            <div class="footer__logo">
+              <img src="./img/footer-logo.png" alt="Logo" />
+            </div>
+            <adress class="footer__adress adress-footer">
+              <div class="adress-footer__region">
+                <span>Ваш регион: </span><u>Тула</u>
+              </div>
+              <div class="adress-footer__contacts">
+                <a href="tel:+74952236659">+7 (495) 223-66-59</a>
+                <a href="#">г. Тула, ул. Пушкинская, 27</a>
+              </div>
+              <div class="adress-footer__docs">
+                <span>ИНН 123456789</span>
+                <span>ОГРН 123456789010</span>
+              </div>
+              <div class="adress-footer__social social-adress">
+                <a
+                  href="https://vk.com"
+                  class="social-adress__icon social-adress__icon_vk"
+                ></a>
+                <a
+                  href="https://telegram.org/"
+                  class="social-adress__icon social-adress__icon_telegram"
+                ></a>
+              </div>
+            </adress>
+          </div>
+          <div class="footer__columns">
+            <div class="footer__column column-footer">
+              <h4 class="column-footer__title">
+                УВЕЛИЧЕНИЕ ПРОДАЖ<br />
+                ДЛЯ ВАШЕГО БИЗНЕСА
+              </h4>
+              <ul class="column-footer__list">
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">SEO</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Тариф «Трафик»</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link"
+                    >Тариф «Объем работ»</a
+                  >
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Тариф «Лиды / CPA»</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link"
+                    >Тариф «SEO + Контекст»</a
+                  >
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Комплексное SEO</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link"
+                    >Для интернет-магазина</a
+                  >
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link"
+                    >Продвижение в Яндекс</a
+                  >
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link"
+                    >Продвижение в Google</a
+                  >
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Разовые работы</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">SEO-аудит сайтов</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link"
+                    >Вывод из-под санкций</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column column-footer">
+              <h4 class="column-footer__title">
+                РАЗРАБОТКА<br />
+                И ПОДДЕРЖКА САЙТОВ
+              </h4>
+              <ul class="column-footer__list">
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Разработка</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">На 1С-Битрикс</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">На WordPress</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">На Tilda</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Сайт-визитка</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Интернет-магазин</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Проектирование</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Поддержка сайтов</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Внесение дорабток</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column column-footer">
+              <h4 class="column-footer__title">
+                КОМПАНИЯ<br />
+                «ДОМ САЙТОВ»
+              </h4>
+              <ul class="column-footer__list">
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Клиенты и отзывы</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Контакты</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link"
+                    >Работа в Demis Group
+                  </a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Личный кабинет</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Статьи</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Публичная оферта</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link"
+                    >Партнерская программа</a
+                  >
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Гарантии</a>
+                </li>
+                <li class="column-footer__item">
+                  <a href="#" class="column-footer__link">Внесение дорабток</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <span class="footer__copyright"
+            >© 2008-2022 Компания «ДОМ САЙТОВ»</span
+          >
+          <div class="footer__appendix">
+            <a href="#">Карта сайта</a> |
+            <a href="#"> Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
