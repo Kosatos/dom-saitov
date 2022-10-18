@@ -845,6 +845,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  row-gap: 36px;
 }
 
 .card-packages__background {
@@ -914,7 +915,6 @@ section {
 }
 .card-packages__offer {
   font-weight: 500;
-  margin-bottom: 36px;
 }
 .card-packages__offer b {
   font-weight: 800;
